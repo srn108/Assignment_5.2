@@ -1,0 +1,12 @@
+"""Implement a Python program to generate all sentences where subject is in
+["Americans", "Indians"] and verb is in ["Play", "watch"] and the object is in
+["Baseball","cricket"]."""
+
+subjects=["Americans","Indians"]
+verbs=["play","watch"]
+objects=["baseball","cricket"]
+
+sentence=[( a+" "+b+" "+" "+c ) for a in subjects for b in verbs for c in objects ]
+
+for k in sentence:
+    print ( k)
